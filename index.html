@@ -1,14 +1,111 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/assets/index-YGPA9VYY.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DxJAY0OB.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyx Engenharia - Site em Manutenção</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Futura', 'Arial', sans-serif;
+            background: #1b5040;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: #85662d;
+            text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+
+        .art-deco-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent, rgba(133, 102, 45, 0.2));
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .button {
+            display: inline-block;
+            background: #85662d;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: 3px solid #ffffff;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background: #ffffff;
+            color: #1b5040;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="art-deco-lines"></div>
+
+    <!-- Logotipo em SVG -->
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="300">
+            <!-- Elemento circular estilizado -->
+            <path d="M50 50c0 27.61-22.39 50-50 50S-50 77.61-50 50 22.39 0 50 0s50 22.39 50 50z" fill="#85662d" />
+            <!-- Letreiro PYX -->
+            <text x="120" y="70" font-family="Futura, Arial, sans-serif" font-size="60" fill="#1b5040" font-weight="bold">
+                PYX
+            </text>
+        </svg>
+    </div>
+
+    <h1>Pyx Engenharia</h1>
+    <p>
+        Estamos realizando melhorias em nosso site.  
+        Em breve estaremos de volta com novidades para você!
+    </p>
+    <a href="mailto:paulo.rodrigues@pyx.eng.br" class="button">Entre em Contato</a>
+    <footer>&copy; 2024 - Pyx Engenharia. Todos os direitos reservados.</footer>
+</body>
 </html>
