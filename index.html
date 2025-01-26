@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pyx Engenharia - Site em Manutenção</title>
+    <title>PYX Engenharia e Consultoria</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -12,11 +12,6 @@
             color: #1b5040;
             font-family: 'Futura', 'Arial', sans-serif;
             text-align: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
         }
 
         .logo {
@@ -52,24 +47,78 @@
         }
 
         footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
+            position: relative;
+            margin-top: 20px;
             font-size: 0.9rem;
             color: rgba(27, 80, 64, 0.8);
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .section h2 {
+            color: #1b5040;
+        }
+
+        ul {
+            padding-left: 1.5rem;
         }
     </style>
 </head>
 <body>
-    <div class="container text-center">
-        <!-- Logotipo como imagem -->
-        <img src="logo.png" alt="Logo Pyx Engenharia" class="logo img-fluid" style="max-width: 600px">
-        <p>Estamos realizando melhorias em nosso site.  
-        Em breve estaremos de volta com novidades para você!</p>
-        <a href="mailto:paulo.rodrigues@pyx.eng.br" class="btn btn-custom">Entre em Contato</a>
+    <header class="py-4 bg-light border-bottom">
+        <h1>PYX Engenharia e Consultoria</h1>
+        <p>Aeronáutica & Mecânica | Desde 1999</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Sobre Nós</h2>
+            <p>Fundada em 1999, a PYX Engenharia e Consultoria atua nas áreas de Engenharia Aeronáutica e Mecânica, oferecendo serviços de consultoria, perícia, regulação, e muito mais. Nossa experiência é baseada em projetos de alta complexidade para seguradoras, reguladoras e empresas em geral.</p>
+        </section>
+
+        <section class="section">
+            <h2>Áreas de Atuação</h2>
+            <ul>
+                <li>Engenharia Aeronáutica: Manutenção de Aeronaves e Homologação de Empresas Aéreas.</li>
+                <li>Engenharia Mecânica: Avaliações Técnicas em Equipamentos Industriais.</li>
+                <li>Perícias e Regulações de Sinistros para Companhias Seguradoras.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Serviços Prestados</h2>
+            <ul>
+                <li>Consultoria e Assessoria Técnica</li>
+                <li>Regulação de Sinistros</li>
+                <li>Perícias em Aeronaves e Motores</li>
+                <li>Laudos e Pareceres Técnicos</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Contato</h2>
+            <p>Endereço: Rua Frei Caneca, 180 - Consolação, São Paulo - SP</p>
+            <p>Email: <a href="mailto:paulo.rodrigues@pyx.eng.br">paulo.rodrigues@pyx.eng.br</a> | <a href="mailto:renato.vigneron@pyx.eng.br">renato.vigneron@pyx.eng.br</a></p>
+            <p>Telefone: +55 11 95350-7373 | +55 12 98278-1284</p>
+        </section>
     </div>
 
-    <footer class="text-center">&copy; 2024 - Pyx Engenharia. Todos os direitos reservados.</footer>
+    <footer class="text-center py-3">
+        <p>&copy; 2025 PYX Engenharia e Consultoria. Todos os direitos reservados.</p>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
